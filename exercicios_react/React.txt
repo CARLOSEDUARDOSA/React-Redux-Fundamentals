@@ -1,2 +1,9 @@
 É bem dificil fazer um projeto apenas com o react, assim precisamos do redux, redux-form...
 
+gerar bundle --> ./node_modules/.bin/webpack
+
+--> framework baseado em componentes
+--> apenas view
+
+React-DOM 
+    --> apenas quando for colocar componentes no html
