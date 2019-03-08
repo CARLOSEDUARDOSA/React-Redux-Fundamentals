@@ -1,4 +1,5 @@
 import React from 'react'
+import { childrenWithProps } from '../utils/reactUtils'
 
 export default props => (
     <div>
@@ -7,7 +8,12 @@ export default props => (
             1 elemento é o componente filho
             2 elemento é a propriedade que quer passar para o filho
             Funciona apenas com um componente
+
+            {React.cloneElement(props.children, {...props}) }
+
+            {React.Children.map(props.children, 
+                child => React.cloneElement(child, {...props}))}
         */}
-        {React.cloneElement(props.children, {...props}) }
+        {childrenWithProps(props.children, props)}
     </div>
 )
