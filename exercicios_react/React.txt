@@ -7,3 +7,6 @@ gerar bundle --> ./node_modules/.bin/webpack
 
 React-DOM 
     --> apenas quando for colocar componentes no html
+
+Componente de Classe
+    --> Para componentes mais complexos, com mais metodos
