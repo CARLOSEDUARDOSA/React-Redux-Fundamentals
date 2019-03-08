@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Primeiro, {Segundo} from './componente'
+import Family from './family'
+import Member from './member'
 
-//ReactDom.render(<h1>Olá React</h1>, document.getElementById('app'))
 ReactDom.render(
-    //Não pode retornar dois componentes
-    //Pode agrupar todos em uma tag 
-    <div>
-        <Primeiro />
-        <Segundo />
-    </div>
+    
+     /*    Member se torna uma tag filha  */
+    <Family>
+        <Member name='Gabriela' lastName='Conde'/>
+    </Family>
 , document.querySelector('#app'))
