@@ -23,3 +23,10 @@ npm i --save-dev body-parser@1.15.2 express@4.14.0 mongoose@4.7.0 node-restful@0
 scripts:
         "dev": "nodemon",
         "production": "pm2 start src/loader.js --name todo-app"
+
+-------------------------- Servidor com express
+--> middleware chain
+    --> funcoes que trabalham com requisiçoes
+    --> aplicada a todas as req. que chegam no Servidor
+
+        server.use(bodyParser.urlencoded({ extended: true }))
