@@ -18,3 +18,16 @@ As propriedades (props)
         this.state = { value: props.initialValue} //inicia o estado
     }
     --> o dado não é alterado, apenas evoluido, o estado vai sendo evoluido, alterando oestado
+
+this
+    --> ele altera o contexto dependendo de quem chama
+
+controlled component (recomendado pelo React)
+    --> estado na DOM vs estado no js - angular um altualiza o outro (mão dupla)
+    --> react o js domina a parada, nunca é gerado da DOM para o componente
+        sempre do codigo js para a DOM (mão única)
+
+    --> na DOM é gerado um evento -> chama o metodo que altera o estado do componente -> apos alterado o estado -> o render atualiza na DOM
+
+uncontrolled component
+    -->         this.state = { value: undefined} -- torna não controlado pelo js

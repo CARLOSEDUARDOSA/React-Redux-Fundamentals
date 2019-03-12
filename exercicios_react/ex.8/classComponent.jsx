@@ -14,6 +14,10 @@ export default class ClassComponent extends Component {
             <div>
                 <h1> {this.props.lavel} </h1>
                 <h2> {this.state.value} </h2>
+                {/* 
+                    como a funcao sum não tem o return ela deve ser chamado por uma função
+                    se for chamada direto, o onclick receberia um undifined
+                */}
                 <button onClick={() => this.sum(1)}>Inc</button>
                 <button onClick={() => this.sum(-1)}>Dec</button>
             </div>
