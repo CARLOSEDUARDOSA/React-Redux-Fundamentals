@@ -1,0 +1,25 @@
+--------------------------- Configuração e instalação
+Moongo --> inicializado
+backend --> pm2 (ferramenta de produção)
+
+Todas dependencia de dev, depois que criar o app.js não é necessario utilizar
+
+npm i --save-dev 
+//Parse do form e json 
+body-parser@1.15.2
+//Framework backend
+express@4.14.0
+// conexão com o bd, mapear objto-doc
+mongoose@4.7.0
+//lib facilitar web services (simples)
+node-restful@0.2.5
+//prod -- launcher app -- start e monitora o app, não deixar parara a aplicação
+pm2@2.1.5
+//dev -- laucher tbm
+nodemon@1.11.0
+
+npm i --save-dev body-parser@1.15.2 express@4.14.0 mongoose@4.7.0 node-restful@0.2.5 pm2@2.1.5 nodemon@1.11.0
+
+scripts:
+        "dev": "nodemon",
+        "production": "pm2 start src/loader.js --name todo-app"
