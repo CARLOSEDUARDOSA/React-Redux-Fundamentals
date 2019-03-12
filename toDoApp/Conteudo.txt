@@ -30,3 +30,11 @@ scripts:
     --> aplicada a todas as req. que chegam no Servidor
 
         server.use(bodyParser.urlencoded({ extended: true }))
+
+--------------------------Conexão com bd
+    mongoose
+    --> crud
+    --> abrir conexao etc.
+    --> start no mongo para funcionar o loader
+
+    Mongo deve estar na pasta data/db  --> ter permissão de escrita
