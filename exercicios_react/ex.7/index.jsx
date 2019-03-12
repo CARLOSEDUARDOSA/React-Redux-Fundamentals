@@ -3,6 +3,5 @@ import ReactDom from 'react-dom'
 import ClassComponent from './classComponent'
 
 
-ReactDom.render(
-    <ClassComponent label='Contador' initialValue={10} />
+ReactDom.render(<ClassComponent value='Componente Classe' />
     , document.querySelector('#app'))

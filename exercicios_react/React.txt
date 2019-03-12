@@ -10,3 +10,11 @@ React-DOM
 
 Componente de Classe
     --> Para componentes mais complexos, com mais metodos
+
+As propriedades (props)
+    --> são somente leitura, sempre
+    --> constructor(props){
+        super(props) //necessario
+        this.state = { value: props.initialValue} //inicia o estado
+    }
+    --> o dado não é alterado, apenas evoluido, o estado vai sendo evoluido, alterando oestado
