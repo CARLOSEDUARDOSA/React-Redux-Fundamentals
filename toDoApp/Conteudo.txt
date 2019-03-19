@@ -38,3 +38,9 @@ scripts:
     --> start no mongo para funcionar o loader
 
     Mongo deve estar na pasta data/db  --> ter permissão de escrita
+
+-------------------------  ODM e Criação da API REST
+
+node restfull cria uma api restful quase pronta  -- rapido
+--quando da um update ele retorna o antigo, para retornar o novo 
+        model.updateOption({new:true})
