@@ -44,3 +44,5 @@ scripts:
 node restfull cria uma api restful quase pronta  -- rapido
 --quando da um update ele retorna o antigo, para retornar o novo 
         model.updateOption({new:true})
+
+-- node-restfull tem propriedades nas consultas get
